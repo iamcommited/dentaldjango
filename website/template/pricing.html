@@ -1,21 +1,21 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">    
 
-<head> 
+<head>
   <meta charset="UTF-8">
   <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Lagos Dental Clinic</title>
+  <title>Lagos Dental Clinic <!-- &amp; Medical HTML Template --></title>
 
   <!-- Favicon -->
-  <link rel="icon" href="{% static 'website/img/core-img/favicon.ico' %}">
+  <link rel="icon" href="./img/core-img/favicon.ico">
 
-  <!-- Core Stylesheet --> 
+  <!-- Core Stylesheet -->
   <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
 
 </head>
@@ -37,7 +37,7 @@
           <!-- Top Content -->
           <div class="col-6 col-md-9 col-lg-8">
             <div class="top-header-content">
-              <a href="#" data-toggle="tooltip" data-placement="bottom" title="28 Jackson Street, Chicago, 7788569 USA"><i class="fa fa-map-marker"></i> <span>Your company address</span></a>
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Your business location address"><i class="fa fa-map-marker"></i> <span>Your business location address</span></a>
               <a href="#" data-toggle="tooltip" data-placement="bottom" title="info.dento@gmail.com"><i class="fa fa-envelope"></i> <span>info.businessname@gmail.com</span></a>
             </div>
           </div>
@@ -60,11 +60,11 @@
     <div class="main-header-area">
       <div class="classy-nav-container breakpoint-off">
         <div class="container">
-          <!-- Classy Menu -->  
+          <!-- Classy Menu -->
           <nav class="classy-navbar justify-content-between" id="dentoNav">
 
             <!-- Logo -->
-            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+            <a class="nav-brand" href="{% url 'home' %}"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a> 
 
             <!-- Navbar Toggler -->
             <div class="classy-navbar-toggler">
@@ -83,9 +83,9 @@
               <div class="classynav">
                 <ul id="nav">
                   <li><a href="{% url 'home' %}">Home</a></li>
-                  <li><a href="#">Pages</a>
+                  <!-- <li><a href="#">Pages</a>
                     <ul class="dropdown">
-                      <li><a href="{% url 'home' %}">- Home</a></li>
+                      <li><a href="index.html">- Home</a></li>
                       <li><a href="about.html">- About Us</a></li>
                       <li><a href="service.html">- Service</a></li>
                       <li><a href="pricing.html">- Pricing</a></li>
@@ -108,7 +108,7 @@
                         </ul>
                       </li>
                     </ul>
-                  </li>
+                  </li> -->
                   <li><a href="about.html">About</a></li>
                   <li><a href="service.html">Service</a></li>
                   <li><a href="pricing.html">Pricing</a></li>
@@ -133,12 +133,12 @@
   </header>
   <!-- ***** Header Area End ***** -->
 
-  <!-- ***** Breadcrumb Area Start ***** -->  
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+  <!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});"> 
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title">Contact</h2>
+          <h2 class="title">Our Pricing</h2>
         </div>
       </div>
     </div>
@@ -150,7 +150,7 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Contact</li>
+              <li class="breadcrumb-item active" aria-current="page">Our Pricing</li>
             </ol>
           </nav>
         </div>
@@ -159,86 +159,158 @@
   </div>
   <!-- ***** Breadcrumb Area End ***** -->
 
-<!-- {% if message_name %}
-      <center><h3>Thanks {{ message_name }}!</h3><br/>We received your email and we will definetly contact you shortly</center>
-{% endif %} -->
-
-
-  <!-- ***** Contact Area Start ***** -->
-  <section class="dento-contact-area mt-50 mb-100">
+  <!-- ***** Dento Pricing Table Area Start ***** -->
+  <section class="dento-pricing-table-area mt-50 section-padding-0-100">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="google-maps mb-100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253682.63269179693!2d3.143872045474019!3d6.548035697956087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1590676513208!5m2!1sen!2sng" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="dento-price-table table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr>
+                  <th scope="col">Service Names</th>
+                  <th scope="col">Stage</th>
+                  <th scope="col">Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Teeth Whitening Service at home</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;11,500.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Teeth Whitening Service at Dental Clinic</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;10,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Ceramic crowns and fillings Dental porcelain</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;99,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Remove crowns, bridges Service</th>
+                  <td>1 tooth</td>
+                  <td>&#x20a6;5,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;12,500.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;3,500.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;27,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;45,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>&#x20a6;200,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Covering the recession of the gums</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Consultation, impressions and preparation of models</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Removal of an old inlay, old crown</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Overlay teeth whitening ( 2 arches)</th>
+                  <td>1 times</td>
+                  <td>&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard porcelain and zirconium crown on implant</th>
+                  <td>1 tooth</td>
+                  <td>$&#x20a6;234,000.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Implantation of an implant (price depends on system used)</th>
+                  <td>1 tooth</td>
+                  <td>$&#x20a6;234,000.00</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <!-- Contact Information -->
-        <div class="col-12 col-md-4">
-          <div class="contact-information">
-            <h5>Address</h5>
-            <p>Central block Ajah shopping Mall Ajah Lekki-Epe Expy Ilaje bus stop beside WEMA Bank Etiosa, Aja, Lekki</p>
-
-            <h5>Phone</h5>
-            <p>+234 0703 785 2845</p>
-
-            <h5>Fax</h5>
-            <p>0703 785 2845</p>
-
-            <h5>Email</h5>
-            <p class="mb-0">info@ultidentdental.com</p>
-          </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="col-12 col-md-8">
-          <div class="contact-form">
-            <!-- Section Heading -->
-            <div class="section-heading">
-              <h2>Get In Touch </h2>
-              <div class="line"></div>
-            </div>
-            <!-- Form -->
-            <form action="{% url 'contact' %}" method="post">
-              {% csrf_token %}
-              <div class="row">
-                <div class="col-lg-6">
-                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
-                </div>
-                <div class="col-lg-6">
-                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
-                </div>
-                <div class="col-12">
-                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn dento-btn">Send Message</button>
-                </div>
-              </div>
-            </form>
-
+        <div class="col-12">
+          <div class="more-btn text-center mt-50">
+            <a href="#" class="btn dento-btn">Read More <i class="fa fa-angle-double-right"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- ***** Contact Area End ***** -->
+  <!-- ***** Dento Pricing Table Area End ***** -->
 
   <!-- ***** Footer Area Start ***** -->
-  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});">
+  <footer class="footer-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/3.jpg' %});"> 
     <div class="container">
       <div class="row">
-        <!-- Single Footer Widget -->   
+        <!-- Single Footer Widget -->
         <div class="col-12 col-sm-6 col-lg-4">
-          <div class="single-footer-widget"> 
-            <a href="./index.html" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a>
+          <div class="single-footer-widget">
+            <a href="./index.html" class="d-block mb-4"><img src="{% static 'website/img/core-img/logo.png' %}" alt=""></a> 
             <p>Etiam sutor risus, dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa interdum dignissim.</p>
             <div class="footer-contact">
-              <p><i class="icon_pin"></i> Your business address</p>
-              <p><i class="icon_phone"></i> +234 802 345 6789</p>
+              <p><i class="icon_pin"></i>Your business location address</p>
+              <p><i class="icon_phone"></i> +234 802 345 6789 </p>
               <p><i class="icon_mail"></i> info.businessname@gmail.com</p>
             </div>
           </div>
@@ -328,13 +400,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script><!--  
   </footer>
   <!-- ***** Footer Area End ***** -->
 
-  <!-- ******* All JS ******* -->  
+  <!-- ******* All JS ******* --> 
   <!-- jQuery js -->
-  <script src=" {% static 'website/js/jquery.min.js' %}"></script>
+  <script src="{% static 'website/js/jquery.min.js' %}"></script>
   <!-- Popper js -->
   <script src="{% static 'website/js/popper.min.js' %}"></script>
   <!-- Bootstrap js -->
-  <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'website/js/bootstrap.min.js' %}"></script> 
   <!-- All js -->
   <script src="{% static 'website/js/dento.bundle.js' %}"></script>
   <!-- Active js -->
